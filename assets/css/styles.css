@@ -1,0 +1,123 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 250%;
+}
+
+h2{
+    font-size: 150%;
+}
+
+body {
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.darkMode{
+    background-color: white;
+    color: black;
+}
+
+body header{
+    display: flex;
+    justify-content:right;
+}
+
+.mode-button{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.card{
+    display: flex; 
+    width: 100%;
+    height: 100%;
+    border-top: double;
+    border-width: 10px;
+}
+
+.lCard{
+    display: inline-block;
+    min-width: 50%;
+    max-width: 50%;
+    flex-basis:50%;
+    border-right: double;
+    border-width: 10px;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    background-image: linear-gradient(yellow, darkorange);
+    border-radius: 50%;
+    height: 450px;
+    width: 450px;
+    margin-top: 25%;
+    margin-left: 18%;
+}
+
+.rCard{
+    min-width: 50%;
+    max-width: 50%;
+    
+}
+
+.content{
+    display: block;
+    justify-content: center;
+    flex-basis: 50%;
+    height: 450px;
+    width: 85%;
+    margin-top: 40%;
+    margin-left: 8%;
+}
+.tBox{
+    display: flex;
+    justify-content: left;
+
+}
+
+.iBox{
+    display: flex;
+    width: 100%;
+}
+
+#uName, 
+#uTitle, 
+#uContent{
+    width: 100%;
+}
+
+#uContent{
+    height: 15%;
+}
+
+textarea #uContent{
+    display: flex;
+    text-align: start;
+}
+
+.content h2{
+    display: flex;
+    justify-content: center;
+}
+.content button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border-radius: 5px;
+}

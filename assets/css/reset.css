@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* gets rid of any default browsers pre-sets for margin, padding. box-sizing takes care of the height/width discrepencies. (include or exlcude padding/borders in box size calculation) */
+  }
+  
+  html {
+    height: 100%;
+    /* defaults html height to 100% keeping content within the viewport*/
+  }
+  
+  body {
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+    /* adjusts styling of text by adding a default font and default line height */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    /* adjusts all headings to be the same font size */
+  }
+  
+  input, select, option, optgroup, textarea, button,
+  pre, code {
+    font-size: 100%;
+    font-family: inherit;
+    /* defaults text styling for these attributes to 100% font size and inherits the default font provided in body (sans serif) */
+  }
+  
+  ol, ul {
+    list-style: none;
+    /* changes the way list items are displayed. Gettting rid of any default bullet points used by a browser*/
+  }

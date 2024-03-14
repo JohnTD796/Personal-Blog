@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <title>Personal Blog</title>
+</head>
+    <body class="darkMode">
+        <header><button class='mode-button' onclick="darkMode()">Toggle Dark Mode</button></header>
+        <section class="card">
+            <section class="lCard">
+                <h1 id="header">My First Blog</h1>
+            </section>
+
+            <section class="rCard">
+                <section class="content">
+                    <h2>Whats On Your Mind?</h2>
+                    <label for="uName" class="tBox">Username:</label>
+                        <input type="text" class="iBox" id="uName" name="uName"><br><br>
+                    <label for="uTitle" class="tBox">Title:</label>
+                        <input type="text" class="iBox" id="uTitle" name="uTitle"><br><br>
+                    <label for="uContent" class="tBox">Content:</label>
+                        <textarea type="text" class="iBox" id="uContent" name="uContent"></textarea><br><br>
+                    <button type="button" class="sButton">Submit</button>
+                </section>
+            </section>
+        </section>
+        <script type="text/javascript" src="./assets/js/form.js"></script>
+    </body>
+</html>
