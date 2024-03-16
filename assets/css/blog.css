@@ -5,6 +5,7 @@
 body{
     background-color: black;
     color:white;
+    height: 100%;
 }
 
 .darkMode{
@@ -34,4 +35,43 @@ body footer{
     display: flex;
     border-top:double;
     border-width: 10px;
+}
+
+.postCard {
+    display: flex;
+    justify-content: space-around;
+}
+
+#bPosts {
+    width: 98%;
+}
+
+#bPosts li{ 
+    display: inline-block;
+    border: solid;
+    border-width: 2px;
+    margin: 5px;
+    width: 100%;
+}
+
+#bPosts li h3,
+            p,
+            h4{
+                display: flex;
+                width: 99%;
+            }
+
+#bPosts li h3 {
+    border-bottom: solid;
+    border-width: 1px;
+    margin: 10px;
+}
+
+#bPosts li p {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+#bPosts li h4 {
+    margin: 50px 10px 5px 10px;
 }
