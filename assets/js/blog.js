@@ -1,5 +1,5 @@
 const postList = document.querySelector('#bPosts');
-
+const backButton = document.querySelector('#back-button')
 
 let posts = []
 
@@ -8,6 +8,9 @@ function darkMode(){
     element.classList.toggle('darkMode')
 }
 
+backButton.addEventListener('click', function (event) {
+    event.preventDefault();
+});
 
 function renderPosts() {
     postList.textcontent = '';
@@ -15,25 +18,21 @@ function renderPosts() {
         const post = posts[i];
     
         const li = document.createElement('li');
-        li.textContent = post;
-        // li.setAttribute('blogPost-index', i)
+        li.textContent = post[i];
 
         const h3 = document.createElement('h3');
-        h3.textcontent = post.content;
+        h3.innerText = post.title;
 
         const p = document.createElement('p');
         p.textContent = post.content;
 
         const h4 = document.createElement('h4')
-        h4.textcontent = post.content;
+        h4.innerText = post.username;
 
         postList.append(li);
-        // postList.li.append(h3);
-        // postList.li.append(p);
-        // postList.li.append(h4);
-        li.append(h3)
-        li.append(p)
-        li.append(h4)
+        li.appendChild(h3)
+        li.appendChild(p)
+        li.appendChild(h4)
         console.log(post)
     }
     console.log(posts)
@@ -56,5 +55,4 @@ function storePosts() {
     localStorage.setItem('posts', JSON.stringify(postsArray))
     
 }
-// console.log[posts]
 init()
