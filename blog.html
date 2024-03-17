@@ -9,18 +9,18 @@
 </head>
 <body class="darkMode">
     <header class="header">My First Blog
+        <nav>
+        <button class="mode-button" id='back-button' onclick="window.open('./index.html', 'self')">Back</button>
         <button class='mode-button' onclick="darkMode()">Toggle Dark Mode</button>
+        </nav>
     </header>
     <section class="postCard">
-        <ul id="bPosts">
-            <li>
-                <h3>Title</h3>
-                <p>Content</p>
-                <h4>Username</h4>
-            </li>
-        </ul>
+        <ul id="bPosts"></ul>
     </section>
-    <footer>Made by Doyle</footer>
     <script type="text/javascript" src="./assets/js/blog.js"></script>
+    <div>
+        <footer>Made by Doyle</footer>
+    </div>
 </body>
+
 </html>

@@ -3,7 +3,7 @@ const titleInput = document.getElementById('uTitle');
 const contentInput = document.getElementById('uContent');
 const submitButton = document.getElementById('sButton')
 
-const postsArray = []
+let postsArray = []
 
 
 function darkMode() {
@@ -14,7 +14,7 @@ function darkMode() {
 // enables/disables the 'darkmode' class in the css files on button press.
 
 function init() {
-    const storedPosts = JSON.parse(localStorage.getItem('blogPost'));
+    const storedPosts = JSON.parse(localStorage.getItem('postsArray'));
     if (storedPosts !== null) {
         postsArray = storedPosts;
     }   
@@ -50,5 +50,5 @@ submitButton.addEventListener('click', function (event) {
     storePosts();
 });
 init()
-// posts.push(blogPost)
+
 

@@ -3,9 +3,12 @@
 }
 
 body{
+    display: flex;
+    flex-flow: column wrap;
     background-color: black;
     color:white;
-    height: 100%;
+    flex-basis: auto;
+    max-height: 400%;
 }
 
 .darkMode{
@@ -31,8 +34,18 @@ body section{
     height: 800px;
 }
 
-body footer{
+div{
     display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+footer{
+    display: flex;
+    margin-top: 65px;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
     border-top:double;
     border-width: 10px;
 }
@@ -40,6 +53,7 @@ body footer{
 .postCard {
     display: flex;
     justify-content: space-around;
+    margin: auto;
 }
 
 #bPosts {
@@ -74,4 +88,9 @@ body footer{
 
 #bPosts li h4 {
     margin: 50px 10px 5px 10px;
+}
+h4::before{
+    content: 'Posted by:';
+    color: rgb(51, 51, 51);
+    margin-right: 3px;
 }
