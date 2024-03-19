@@ -7,10 +7,8 @@ function darkMode(){
     let element = document.body;
     element.classList.toggle('darkMode')
 }
-
-backButton.addEventListener('click', function (event) {
-    event.preventDefault();
-});
+// sets new element 'element' to the entire document body effectively grabbing all text and background colors that are in the body of the webpage.
+//  line 8: grabs 'element' and toggles 'darkMode' css on or off when the 'toggle dark mode' button is pressed.
 
 function renderPosts() {
     postList.textcontent = '';
@@ -33,12 +31,8 @@ function renderPosts() {
         li.appendChild(h3)
         li.appendChild(p)
         li.appendChild(h4)
-        console.log(post)
     }
-    console.log(posts)
-    
 }
-
 
 function init() {
     const storedPosts = JSON.parse(localStorage.getItem('postsArray'));
@@ -46,10 +40,8 @@ function init() {
     if (storedPosts !== null) {
         posts = storedPosts;
     }
-    renderPosts();
-    console.log(storedPosts)   
+    renderPosts();  
 }
-
 
 function storePosts() {
     localStorage.setItem('posts', JSON.stringify(postsArray))

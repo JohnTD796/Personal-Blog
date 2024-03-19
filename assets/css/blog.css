@@ -34,13 +34,12 @@ body section{
     height: 800px;
 }
 
-div{
-    display: flex;
-    justify-content: center;
-    height: 50%;
+.portfolio-link {
+    text-decoration: none;
+    color: inherit;
 }
 
-footer{
+.foot {
     display: flex;
     margin-top: 65px;
     justify-content: center;
@@ -48,6 +47,8 @@ footer{
     width: 100%;
     border-top:double;
     border-width: 10px;
+    text-decoration: none;
+    height: 50%;
 }
 
 .postCard {
