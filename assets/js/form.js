@@ -10,8 +10,6 @@ function darkMode() {
     let element = document.body;;
     element.classList.toggle('darkMode');
 }
-// selects everything in the body of the document and 
-// enables/disables the 'darkmode' class in the css files on button press.
 
 function init() {
     const storedPosts = JSON.parse(localStorage.getItem('postsArray'));
