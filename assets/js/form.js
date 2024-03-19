@@ -48,7 +48,7 @@ submitButton.addEventListener('click', function (event) {
     
     storePosts();
 
-    location.href='./Personal-Blog/blog.html'
+    location.href='/Personal-Blog/blog.html'
 
 });
 init()
