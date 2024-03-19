@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href="./assets/css/reset.css"/>
-    <link rel='stylesheet' href="./assets/css/blog.css"/>
-    <title>My First Blog</title>
-</head>
-<body class="darkMode">
-    <header class="header">My First Blog
-        <nav>
-        <button class="mode-button" id='back-button' onclick="window.open('./index.html', 'self')">Back</button>
-        <button class='mode-button' onclick="darkMode()">Toggle Dark Mode</button>
-        </nav>
-    </header>
-    <section class="postCard">
-        <ul id="bPosts"></ul>
-    </section>
-    <script type="text/javascript" src="./assets/js/blog.js"></script>
-    <div>
-        <footer>Made by Doyle</footer>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href="./assets/css/reset.css"/>
+        <link rel='stylesheet' href="./assets/css/blog.css"/>
+        <title>My First Blog</title>
+    </head>
+    <body class="darkMode">
+        <header class="header">My First Blog
+            <nav>
+                <button class="mode-button" id='back-button' onclick="window.open('./index.html', '_self')">Back</button>
+                <button class='mode-button' onclick="darkMode()">Toggle Dark Mode</button>
+            </nav>
+        </header>
+        <section class="postCard">
+            <ul id="bPosts"></ul>
+        </section>
+        <script type="text/javascript" src="./assets/js/blog.js"></script>
+        <div>
+            <footer class="foot">
+            <a class="portfolio-link" href="https://johntd796.github.io/Module2Challenge/#contact-head">My Portfolio</a>
+            </footer>
+        </div>
+    </body>
 
 </html>

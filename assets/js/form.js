@@ -26,6 +26,7 @@ function storePosts() {
 
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
+  console.log('test')
     
     const blogPost = {
         username: usernameInput.value.trim(),
@@ -33,11 +34,11 @@ submitButton.addEventListener('click', function (event) {
         content: contentInput.value.trim(),
     };
 
-    console.log(blogPost)
     if (usernameInput.value === '' ||
         titleInput.value === '' ||
         contentInput.value === ''){
-        return false;
+            alert('Please input username, title, and content of your blog post.')
+            return false;
     } 
     else{
         postsArray.push(blogPost)
@@ -48,6 +49,9 @@ submitButton.addEventListener('click', function (event) {
     }
     
     storePosts();
+
+    location.href='/blog.html'
+
 });
 init()
 
